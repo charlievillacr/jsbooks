@@ -68,3 +68,22 @@ JavaScript is often abbreviated as JS. Some of the main features of the language
 
 Object-Oriented design is perhaps the most important feature of JavaScript, as it allows us the creation of objects and establishes relationships between them, commonly know as Inheritance and Encapsulation, which you'll come to know about in the proceeding chapters.
 
+## Chapter 2: Main features of JavaScript
+
+Most of the features of JavaScript are more or less same as that of other common programming languages. Almost all the programming languages have these features. The main features are as follows.
+
+1. JavaScript Variables
+
+One of the very important of JavaScript is variables. They act as the storage containers for values. In other words, they are the names of the memory locations at which the values are stored.
+
+These values can be an integer, decimal values, strings or single characters. The variable names have to be unique. 
+
+This is important because otherwise, this will create a great amout of confusion. The name of the variable can start from an alphabet, dollar sign or underscore signs.
+
+The names are case-sensitive. You will get to know exact rules for naming a variable in the later chapter.
+
+Examples of some varibales are:
+
+var abcd:
+
+var $abc;
