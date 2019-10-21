@@ -87,3 +87,17 @@ Examples of some varibales are:
 var abcd:
 
 var $abc;
+
+2. JavaScript Objects
+
+Objects are nothing but a collection of some date values. These generally are written as name-value pairs. 
+
+For example:
+
+var name = {firstName:"Amit",
+                lastName:"Kumar",
+                age:70};
+
+To access the valus in an object, we use dot notation. For example, if you want to access the lastName present in name object, we can write that as name.lastName. Arrays are a type of object.
+
+3. JavaScript Comments
