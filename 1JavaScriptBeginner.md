@@ -61,7 +61,7 @@ JavaScript has built-in as well as user defined methods/functions that allow the
 
 functions that can be called aftter a certain period of time to do dome task. 
 
-JavaScript can be used in the HTML file itself, if it is written into the <!-- <script></script> --> tags, and can also be attached to it as an external file. The extension of a JavaScript program is '.js.'
+JavaScript can be used in the HTML file itself, if it is written into the ```<script></script>``` tags, and can also be attached to it as an external file. The extension of a JavaScript program is '.js.'
 
 JavaScript is often abbreviated as JS. Some of the main features of the language are as follows:
 
@@ -235,13 +235,13 @@ It is presumed here that you are aware of HTML and CSS syntax, as they'll be use
 
 Web Browsers render HTML and CSS and display it on the screen, and have built-in JavaScript interpreter that understands the language and executes the tasks of the program.
 
-But for browsers to know where to start with th interpretation of JavaScript, we need to make use of the <!-- <script> --> tag that tells the browser the starting point of the program. 
+But for browsers to know where to start with th interpretation of JavaScript, we need to make use of the ```<script>``` tag that tells the browser the starting point of the program. 
 
-<!-- </script> --> tells the browser that it has reached the end of the program.
+```</script>``` tells the browser that it has reached the end of the program.
 
 JavaScript is written within the tags:
-<!-- <script> and </script> -->, and these tags are most commonly placed just above the 
-<!-- </body> --> tag.
+```<script> </script>```, and these tags are most commonly placed just above the 
+```</body>```tag.
 
 This is done to make the script load after the initial page load that makes the page load faster.
 
@@ -249,7 +249,7 @@ Your first program
 
 Let's create a program that makes and alert box with the message "Hello, World!".
 
-<!--
+```
 <html>
     <head>
         <title>First Program</title>
@@ -261,13 +261,13 @@ Let's create a program that makes and alert box with the message "Hello, World!"
        </script>
     </body>
 </html>
--->
+```
 
-If you're using a modern browser like Chrome or Firefox or Safari, they support HTML5. But if you're on and old browser which does not support HTML%, you'll need to add the attribute of type to the <!-- <script> tag -->, and it'll look like this:
+If you're using a modern browser like Chrome or Firefox or Safari, they support HTML5. But if you're on and old browser which does not support HTML%, you'll need to add the attribute of type to the ```<script>``` tag, and it'll look like this:
 
-<!-- 
+```
 <script type="text/javascript"></script>
--->
+```
 
 // Tells the browser that a comment will follow and ignore the line. This is particulary usefull to document your code so that anyone is able to understand what you've written.
 
@@ -283,11 +283,13 @@ Congratulations! You have just made your very first Javascrip program. While Jav
 
 You can use JavaScript with HTML for dynamic and delightfull user experience. In this chapter, we will learn about the various ways through which we can embed JavaScript in an HTML document.
 
-In order to embed JavaScript directly in a page, you can use the: <!-- <script> tag -->
+In order to embed JavaScript directly in a page, you can use the:
+
+```<script>``` tag
 
 The syntax of the script tag is as follows:
 
-<!-- 
+```
 
 <script>
 
@@ -296,7 +298,7 @@ alert("Hello from JavaScript");
 
 </script>
 
- -->
+```
 
 Various optional attributes are available for use with the script tag for more customiztion. Here is the list of available attributes that can be used with the tag:
 
@@ -306,7 +308,7 @@ type: This tag is used to specify the language writtem between the script tag, b
 
 Here is an example:
 
-<!-- 
+```
 
 <script type="text/JavaScript">
 
@@ -314,17 +316,17 @@ Here is an example:
 
 </script>
 
- -->
+```
 
 ## src
 
 src: If you want to load JavaScript code externally then this is the attribute which you should be looking at. The URL of the external JavaScript code is set as the value of this attribute.
 
-<!--
+```
 
 <script src="url/to/external/JavaScript/file.js"></script>
 
--->
+```
 
 ## defer
 
@@ -332,11 +334,10 @@ defer: If this attribute is present in the script tag then the JavaScript file a
 
 Example:
 
-<!--
-
+```
 <script src="path/to/file.js" defer></script>
 
--->
+```
 
 ## async
 
@@ -346,13 +347,13 @@ If this tag is not present then the script is first executed, and the the page l
 
 Example:
 
-<!-- <script src="path/to/file.js" async></script> -->
+```<script src="path/to/file.js" async></script>```
 
 Note that this attribute is only for JavaScript code loaded externally, i.e., if the src attribute is present in the same script tag as the defer attribute.
 
 There is one more way to embed JavaScript in HTML, which is to write JavaScript code in event handler attributes of elements. This way when that event fires, the JavaScript code which has been written as the attribute value is executed!
 
-<!-- <button onclick="alert('JavaScript from event handler');">Click me</button> -->
+```<button onclick="alert('JavaScript from event handler');">Click me</button>```
 
 In the above example when the button is clicked an alert dialog pops up with the message "JavaScript from event handler," showing that the JavaScript in attribute value was executed.
 
@@ -387,7 +388,7 @@ Changing the innerHTML property of an HTML element is a common way to display da
 
 Let us look at an example here:
 
-<!--
+```
 
 <!DOCTYPE html>
 <html>
@@ -404,7 +405,7 @@ document.getElementById("new").innerHTML = "This is how it's done";
 </body>
 </html>
 
--->
+```
 
 ## document.write()
 
@@ -420,7 +421,7 @@ It is mainly used for testing purposes.
 
 Let's understand this through and example:
 
-<!-- 
+```
 
 <!DOCTYPE html>
 <html>
@@ -435,11 +436,11 @@ document.write(1+2);
 </body>
 </html>
 
- -->
 
+```
  As I was saying, using document.write() after an HTML document is fully loaded will delete all existing HTML. Let us see this through an example:
 
- <!-- 
+``` 
  
  <!DOCTYPE html>
  <html>
@@ -452,13 +453,13 @@ document.write(1+2);
  </body>
  </html>
 
-  -->
+ ```
 
 ## window.alert()
 
 You have probably seen on many websites an alert like "You seem to hae entered a wrong password." These appear in the form of small dialog boxes and are often used to alert the user of something.
 
-<!-- 
+```
 
 <!DOCTYPE html>
 <html>
@@ -472,7 +473,7 @@ You have probably seen on many websites an alert like "You seem to hae entered a
 </body>
 </html>
 
- -->
+```
 
  ## console.log()
 
@@ -484,7 +485,7 @@ You have probably seen on many websites an alert like "You seem to hae entered a
  
  In case you are wondering what a console looks like, press: ctrl + shift + I in Google Chrome on the desired web page.
 
- <!-- 
+``` 
  
 <!DOCTYPE html>
 <html>
@@ -497,7 +498,7 @@ console.log("it is in console");
 </body>
 </html>
 
-  -->
+ ```
 
 You will get more familiar with console.log() when you start creating applications in JavaScript.
 
