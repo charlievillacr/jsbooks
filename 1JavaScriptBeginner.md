@@ -499,3 +499,12 @@ console.log("it is in console");
 
   -->
 
+You will get more familiar with console.log() when you start creating applications in JavaScript.
+
+The above were the four ways in which we display data in JavaScript. However, it must be kept in mind that their usage depends on the requirement. You need to select the required method based on the desired result.
+
+## Chapter 7: Variables, Data types & Constants
+
+### Variables
+
+Variables are always an important aspect of any programming language. They are used to store values which can be later addressed using those variable names. Same goes with JavaScript. Let us look at the syntax for creating a variable:
