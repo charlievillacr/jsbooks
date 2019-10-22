@@ -347,13 +347,20 @@ If this tag is not present then the script is first executed, and the the page l
 
 Example:
 
-```<script src="path/to/file.js" async></script>```
+```
+<script src="path/to/file.js" async></script>
+
+```
 
 Note that this attribute is only for JavaScript code loaded externally, i.e., if the src attribute is present in the same script tag as the defer attribute.
 
 There is one more way to embed JavaScript in HTML, which is to write JavaScript code in event handler attributes of elements. This way when that event fires, the JavaScript code which has been written as the attribute value is executed!
 
-```<button onclick="alert('JavaScript from event handler');">Click me</button>```
+```
+
+<button onclick="alert('JavaScript from event handler');">Click me</button>
+
+```
 
 In the above example when the button is clicked an alert dialog pops up with the message "JavaScript from event handler," showing that the JavaScript in attribute value was executed.
 
@@ -438,6 +445,7 @@ document.write(1+2);
 
 
 ```
+
  As I was saying, using document.write() after an HTML document is fully loaded will delete all existing HTML. Let us see this through an example:
 
 ``` 
