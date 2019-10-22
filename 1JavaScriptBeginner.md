@@ -300,6 +300,8 @@ alert("Hello from JavaScript");
 
 Various optional attributes are available for use with the script tag for more customiztion. Here is the list of available attributes that can be used with the tag:
 
+## type
+
 type: This tag is used to specify the language writtem between the script tag, but since JavaScript is the primary scripting language used for all web browsers, it is not mandatory to use this attribute, as it is set by default.
 
 Here is an example:
@@ -314,6 +316,8 @@ Here is an example:
 
  -->
 
+## src
+
 src: If you want to load JavaScript code externally then this is the attribute which you should be looking at. The URL of the external JavaScript code is set as the value of this attribute.
 
 <!--
@@ -321,6 +325,8 @@ src: If you want to load JavaScript code externally then this is the attribute w
 <script src="url/to/external/JavaScript/file.js"></script>
 
 -->
+
+## defer
 
 defer: If this attribute is present in the script tag then the JavaScript file associated with script tag is executed after the page has been fully parsed, i.e. after the DOMContentLoaded event is fired.
 
@@ -331,3 +337,104 @@ Example:
 <script src="path/to/file.js" defer></script>
 
 -->
+
+## async
+
+If this attribute is present in the script tag then the JavaScript file associated with script tag is executed asynchronously while the page continues to load. 
+
+If this tag is not present then the script is first executed, and the the page load continues.
+
+Example:
+
+<!-- <script src="path/to/file.js" async></script> -->
+
+Note that this attribute is only for JavaScript code loaded externally, i.e., if the src attribute is present in the same script tag as the defer attribute.
+
+There is one more way to embed JavaScript in HTML, which is to write JavaScript code in event handler attributes of elements. This way when that event fires, the JavaScript code which has been written as the attribute value is executed!
+
+<!-- <button onclick="alert('JavaScript from event handler');">Click me</button> -->
+
+In the above example when the button is clicked an alert dialog pops up with the message "JavaScript from event handler," showing that the JavaScript in attribute value was executed.
+
+Do not worry if you could not understand the above code example. Events and event handler attributes are discussed in detail later in this book.
+
+So that was all for this chapter, now you are ready to embed JavaScript into your HTML document and make it more awesome!
+
+## Chapter 6: Basic display operations in JavaScript
+
+Following are some of the ways by which JavaScript displays data:
+
+- Writing into an HTML element, using innerHTML.
+- Writing into the HTML output using document.write().
+- Writing into an alert box, using window.alert().
+- Writing into the browser console, using console.log()
+
+### innerHTML
+
+"innerHTML" as the name suggests, represents the inner content of an HTML element. So basically we can use innerHTML property to change the content inside any HTML element.
+
+However, there is a small catch.
+
+How will the JavaScript know which element we are actually interested in changing? What if it changes the content of all the elements present in the web page?
+
+To solve this problem, we assign an id to the HTML element whose content we are interested in changing. That way we will be sure as to which element should reflect the changes.
+
+The next situation which arises in front of us is how we access an HTML element based on the id. In such case, we make use of a method called document.getElementbyId("ID").
+
+Changing the innerHTML property of an HTML element is a common way to display data in HTML.
+
+## document.getElementbyId("ID")
+
+Let us look at an example here:
+
+<!--
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Chapter 9</h1>
+<p>Use of innerHTML to display data</p>
+
+<p id="new"></p>
+
+<script>
+document.getElementById("new").innerHTML = "This is how it's done";
+</script>
+</body>
+</html>
+
+-->
+
+## document.write()
+
+Another insteresting way to display data in a web page using JavaScript is document.write().
+
+The complete web page can be termed as a document. So as the name of this function suggests, it is used to write on th document.
+
+If is is used after the page is loaded, it not only writes but also replaces the existing (old) value with the new one.
+
+Therefore, one should be very careful while working with them. 
+
+It is mainly used for testing purposes.
+
+Let's understand this through and example:
+
+<!-- 
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Chapter 6</h1>
+<p>Use of document.write() to display data</p>
+
+<script>
+document.write(1+2);
+</script>
+
+</body>
+</html>
+
+ -->
+
+ As I was saying, using document
