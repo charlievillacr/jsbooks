@@ -437,4 +437,65 @@ document.write(1+2);
 
  -->
 
- As I was saying, using document
+ As I was saying, using document.write() after an HTML document is fully loaded will delete all existing HTML. Let us see this through an example:
+
+ <!-- 
+ 
+ <!DOCTYPE html>
+ <html>
+ <body>
+
+ <h1>My First Web Page</h1>
+ <p>My frist paragraph.</p>
+ <button onclick="document.write(1+2)">Magic Button!!</button>
+
+ </body>
+ </html>
+
+  -->
+
+## window.alert()
+
+You have probably seen on many websites an alert like "You seem to hae entered a wrong password." These appear in the form of small dialog boxes and are often used to alert the user of something.
+
+<!-- 
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Web Page</h1>
+<p>My first paragraph.</p>
+
+<button onclick="window.alert(1+2)">Add 1 & 2</button>
+
+</body>
+</html>
+
+ -->
+
+ ## console.log()
+
+ "console.log()" is a savior for developers. It is used for debugging purposes. The result from console.log() is not displayed on the web page. 
+ 
+ Instead, it is displayed in the console. This is useful feature because sometimes you don't want testing data to be displayed on the web page.
+
+ Those data are used by developer to know if everything is working fine on the website or not. 
+ 
+ In case you are wondering what a console looks like, press: ctrl + shift + I in Google Chrome on the desired web page.
+
+ <!-- 
+ 
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+console.log("it is in console");
+<script>
+
+</body>
+</html>
+
+  -->
+
