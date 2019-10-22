@@ -517,3 +517,20 @@ The above were the four ways in which we display data in JavaScript. However, it
 ### Variables
 
 Variables are always an important aspect of any programming language. They are used to store values which can be later addressed using those variable names. Same goes with JavaScript. Let us look at the syntax for creating a variable:
+
+#### Variables Syntax
+
+```
+
+var <variablename>; //Declares a variable
+
+<variablename> = value; //Assigning value to the variable
+
+```
+
+or
+
+```
+var <variableName> = value; //Declaration and assignment in the same line
+
+```
