@@ -663,3 +663,5 @@ var age = 30+40;
 ```
 
 The variable "name" will store the concatenated value of both the string i.e. "Amit Kumar" while the variable age will store the added value of 30 & 40 i.e. 70.
+
+<!-- Page 35 -->
