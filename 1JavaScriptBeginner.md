@@ -26,15 +26,15 @@
 
 Known as the "language of the web" because it is used in the development of an incredibly high number of applications on the web and the mobile paradigm alike. 
 
-It is the language which makes web applications dynamic so that users can interact with them, wich provides a rich user experience.
+It is the language which makes web applications dynamic so that users can interact with them, which provides a rich user experience.
 
 When JavaScript came into existence around 1995, most of the logical calculations and input validations in web pages were primarily donde using server-side languages like PHP. 
 
 The process was very long and unnecessarily involved two-way trips, first to end a request to the server and the get the data/error back to the client's computer. It was a huge letdown to UX. The need of that time was to make validations right on the client's computer before sending to the server, thereby reducing the bandwidth, which at that time was a major issue so that the user would not have to wait just to see if he made any errors while typing out that form.
 
-JavaScript was created by Brendan Eich as "LiveScript" in 1995, wich got renamed to "JavaScript." It was initially named "Mocha" but named JavaScript to gain traction with the language Java that was getting popular at the same time. The first major standarization ocurred in the form of ECMA standarization. The fist version developed still lacked features like RGEX ans JSON and some important built-in functions. The language kept getting developed and adding features to its repertoire.
+JavaScript was created by Brendan Eich as "LiveScript" in 1995, which got renamed to "JavaScript." It was initially named "Mocha" but named JavaScript to gain traction with the language Java that was getting popular at the same time. The first major standarization ocurred in the form of ECMA standarization. The fist version developed still lacked features like RGEX ans JSON and some important built-in functions. The language kept getting developed and adding features to its repertoire.
 
-It was the ECMA v3 that saw the birth of AJAX (Asynchronous JavaScript and XML), wich today is at the core of every web application framework.
+It was the ECMA v3 that saw the birth of AJAX (Asynchronous JavaScript and XML), which today is at the core of every web application framework.
 
 At present, the language is packed with exciting new features. Let's look at the advantges one gets with JavaScript:
 
@@ -48,7 +48,7 @@ At present, the language is packed with exciting new features. Let's look at the
 
 - UI/UX improvements.
 
-Owning to the language's success and usability, many frameworks and libraries like jQuery, Angular JS, React JS have been developed wich make writing code in JavaScript a delight.
+Owning to the language's success and usability, many frameworks and libraries like jQuery, Angular JS, React JS have been developed which make writing code in JavaScript a delight.
 
 JavaScript is the scripting language that is being actively used by developers around the globe in creating interactive, functional and animated by the use of this language as a scripting tool.
 
@@ -129,7 +129,7 @@ b. Multi-line comments
 
 4. JavaScript Functions OR methods
 
-Functions form an integral part of any programming language. Functions helps us write code in an efficient manner wich not only improves the readability but also contribute a great deal while maintaining it. A function is a set of statements which are used to carry out a particular task.
+Functions form an integral part of any programming language. Functions helps us write code in an efficient manner which not only improves the readability but also contribute a great deal while maintaining it. A function is a set of statements which are used to carry out a particular task.
 
 For example:
 
@@ -465,7 +465,7 @@ document.write(1+2);
 
 ## window.alert()
 
-You have probably seen on many websites an alert like "You seem to hae entered a wrong password." These appear in the form of small dialog boxes and are often used to alert the user of something.
+You have probably seen on many websites an alert like "You seem to have entered a wrong password." These appear in the form of small dialog boxes and are often used to alert the user of something.
 
 ```
 
@@ -518,13 +518,13 @@ The above were the four ways in which we display data in JavaScript. However, it
 
 Variables are always an important aspect of any programming language. They are used to store values which can be later addressed using those variable names. Same goes with JavaScript. Let us look at the syntax for creating a variable:
 
-#### Variables Syntax
+##### Variables Syntax
 
 ```
 
-var <variablename>; //Declares a variable
+var <variableName>; //Declares a variable
 
-<variablename> = value; //Assigning value to the variable
+<variableName> = value; //Assigning value to the variable
 
 ```
 
@@ -534,3 +534,132 @@ or
 var <variableName> = value; //Declaration and assignment in the same line
 
 ```
+
+In the first method, we declare the variable first and then assign a value to it at some later point in the program.
+
+The only thing one must keep in mind here is that declaration must alwys come before the assigment.
+
+However, in the second method, both the declaration as well as the assignment happen in a single line.
+
+Let us look at some examples here
+
+```
+var abc; //Declaration
+
+abc = "New variable"; //Assigment
+
+var num = 33; //Declaration and assignment
+```
+
+In the above example, the variable "abc" will store the string value "New Variable" while the variable "num" will store the number value 33.
+
+
+```
+var marksScience = 85; //Variable name
+var marksMaths = 100;
+var total = marksScience + marksMaths; //add and store the result
+
+```
+
+In the above example, the variable total will store the calculated value i.e. 185.
+
+All the variables which are used in the program, must have unique names or else it might end up creating a ruckus while executing code.
+
+These unique names are called identifiers. For naming a variable, certain rules must be followed.
+
+#### Rules for naming a variable
+
+- Names must start with a letter, dollar($), or underscore(_).
+
+- You can include letters, digits, underscores, and dollar signs in a variable name.
+
+- Variable names in JavaScript are case-sensitive.
+
+- You cannot used reserved words / keywords as varibale names.
+
+Some of the examples of valid variable names are as follows:
+
+```
+Marks1
+$abc
+_fun
+marks2
+```
+
+You would have noticed that we make use of an "equal to" symbol to assign some values to a variable. This "equal to" symbol is called assignment operator and is used to initialize a variable.
+
+#### Few important points to remember
+
+1. When you simply declare a variable, it holds no value.
+
+For example:
+
+```
+var abc;
+```
+
+Here the variable "abc" will not contain any value until we assign it some value.
+
+2. Many variables can be declared in a single statement. To do that, we start the statement with var and separate the variables by a comma.
+
+For example:
+
+var firstName="Amitabh", lastName="Kumar", age=70;
+
+3. The declaration of variables can span multiple lines.
+
+var firstName="Amitabh",
+    lastName="Kumar",
+    age=70;
+
+4. Most of the time, variables are simply declared and are initialized at some later point in the program. As mentioned in the first point, after the declaration, the variable holds no value. To be precise, it holds the value undefined. 
+
+For  example:
+
+```
+var name;
+```
+
+The variable "name" will contain the value undefined after the above statement is executed.
+
+5. even if you re-declare a JavaScript variable, it retains its previous value.
+
+For example:
+
+```
+var name="Amitabh";
+var name;
+```
+
+Even after the execution of these statements, the variable "name" will still have the value "Amitabh."
+
+
+## Data Types
+
+Data types, as the name suggets, signifies the type of dta a variable can hold. A JavaScript variable can hold several types of data.
+
+For example string, number, object, Boolean, etc.
+
+```
+var age = 70            //stores a Number
+var lastname = "Kumar"  //stores a String
+var name = {firstName:"Amitabh", lastName:"Kumar"}; 
+                        //stores an object
+var case = true;        //stores a Boolean
+
+```
+
+Data types is an important aspect of programming because it specifies what kind of data a variable is holding.
+
+This helps the compilar to understand what kind of operations ca be performed on them. 
+
+The addition operator will have different results if applied to two numers and a radically different result if applied on two strings.
+
+For example:
+
+```
+var name = "Amit"+" "+"Kumar";
+var age = 30+40;
+```
+
+The variable "name" will store the concatenated value of both the string i.e. "Amit Kumar" while the variable age will store the added value of 30 & 40 i.e. 70.
