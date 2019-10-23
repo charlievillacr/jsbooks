@@ -972,3 +972,34 @@ console.log(y++); //prints 5 NOT 6
 Decreases the value of its numerical operand by one. Similar to increment operator, this postfix and prefix rule applies here too.
 
 Example:
+
+```
+//say x value is 5
+console.log(--x); //prints 4
+//value of y at this oint is 4
+
+```
+
+## Assignment Operator
+
+These operators are used to assign value to variables. Value is assigned to the left operand which is based on the right operand value. Listed below are the assignment operators.
+
+### Equal[=]
+
+This operator simple assigns the value of tis right operand to the left operand. 
+
+Example: "x=5" this assigns 5 to x, so now the value of x is 5.
+
+### Addition assignment[+=]
+
+This operator adds the value of the left and the right operand and then assigns the result to the left operand.
+
+Example: say x = 2 then "x += 3" will make x's value 5.
+
+### Subtraction assignment[-=]
+
+This operator substracts the value of the right operand from the left operand and then assigns the result to he left operand.
+
+Example: say x = 8 then "x -= 3" will make x's value 5.
+
+(Page 48)[https://github.com/charlievillacr/jsbooks/blob/master/1JavaScriptBeginner.pdf]
