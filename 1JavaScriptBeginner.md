@@ -798,3 +798,43 @@ var name = null;    //value becomes null
 ```
 
 ## Undefined
+
+The variables which are not assigned any value will contain undefined.
+
+For example:
+
+```
+var abc; // value is undefined
+```
+
+People generally get confused betweeen null and unefined. I will explain the diffrence at some later point in this chapter.
+
+Those were the primitive types. Now let us look at some none-primitive data types.
+
+<!-- End of primitive types -->
+
+
+## Arrays
+
+Arrays are nothing but a collection of some values. The set of those values is written using curly braces.
+
+Like all other programming languages, the index starts with 0.
+
+```
+var names[] = {"Ram", "Rahim", "Jaspaal"};
+
+//names[0] = "Ram";
+
+```
+
+## Objects
+
+Objects in JavaScript are written as name-value pairs.
+
+For example:
+
+```
+var name = {firstName:"Amit",
+                lastName:"Kumar",
+                age:70};
+```
