@@ -608,13 +608,18 @@ Here the variable "abc" will not contain any value until we assign it some value
 
 For example:
 
+```
 var firstName="Amitabh", lastName="Kumar", age=70;
+```
 
 3. The declaration of variables can span multiple lines.
+
+```
 
 var firstName="Amitabh",
     lastName="Kumar",
     age=70;
+```
 
 4. Most of the time, variables are simply declared and are initialized at some later point in the program. 
 
@@ -674,7 +679,9 @@ The variable "name" will store the concatenated value of both the string i.e. "A
 
 Now consider the next example:
 
+```
 var abc = 70 + "Amit";
+```
 
 If we try and relate the above example with normal arithmetic, it does not make much sense. Adding a number to a string is not possible in normal arithmetic.
 
@@ -682,7 +689,9 @@ However, it would be interesting to see how JavaScript will treat the above exam
 
 JavaScript will interpret the above example as follows:
 
+```
 var abc = "70" + "Amit";
+```
 
 Whenever we try to add a number with a string, JavaScript will treat the number as a string. However, what if our expression is a mix of several numbers and several strings! What will be the result in that case? 
 
@@ -764,6 +773,7 @@ For example
 ```
 var xyz = "It's done";
 var xyz1 = 'Friends call him "James"';
+```
 
 ## Numbers
 
@@ -786,8 +796,10 @@ var y = 23e-5;      // 0.00023
 
 The concept of Boolean is almost same as that of other programming languages. Booleans have only two values: "true" and "false." The major use of hese comes while forming condinitonal statements.
 
+```
 var a = true;
 var b = false;
+```
 
 ## Null
 
@@ -838,3 +850,93 @@ var name = {firstName:"Amit",
                 lastName:"Kumar",
                 age:70};
 ```
+
+## typeof Operator
+
+At various points in the program we need to know which type of data the variable contains. We can determine that using typeof operator.
+
+For example:
+
+```
+typeof "Amit"                   // "string"
+typeof ""                       // "string" (empty string)
+typeof 314                      // "number"
+typeof 3.14                     // "number"
+typeof (3+4)                    // "number"
+typeof false                    // "boolean"
+typeof [1,2,3,4]                // "object" because arrays are considered as objects in JavaScript
+typeof {name:'Amit', age:70}    // "object"
+
+```
+
+Now that I have explained typeof operator let us look at what exactly is the difference between undefined and null.
+
+If we operate typeof on null, it returns an objecy whereas if we operate typeof on undefined, undifined is returned.
+
+## Constants
+
+Constant as the name suggets are those variable whose value cannot be changed.
+
+These are declared using const Keyword and must be assigned a value during the time of declaration. 
+
+It can either be local to a function or can be global variable. Constants once assigned cannot be changed. 
+
+Thier value remains read-only throughout the program.
+
+For example:
+
+```
+const = 3.14;   //Declaring & initializing a constant
+
+```
+
+This chapter explained variables, data types, and constants.
+
+## Chapter 8
+
+### What are operators?
+
+Operators are basically symbols which act as a function, though they differ from functions syntax-wise. They take input(operands) and produce a certain output based on the operands.
+
+For example:
+
+- "5+2", "5" and "2" are operands(the input), andthe "+" symbol is the operator, which results to "7".
+
+### Classification of operators
+
+Operators are generaly classified on the basis of the type of operation they do. Operators like typeof, instanceof, etc. are unique and thus cannot be classified under the categories about which you will read below.
+
+### Arithmetic Operators
+
+As the name hunts, these are operators which perform arithmetic tasks on the operand(s). Listed below are the arithmetic operators.
+
+##### Addition[+]
+
+This operator performs an addition operation on two operands on two operands if both of them are numerical, if anyone or both of the two operands  are numerical, if anyone or both of the two operands are of string type then this operator concatenates / joins the two operands.
+
+```
+Examples:
+
+4 + 2                   //evaluates to 6
+'example' + 5           //evaluates to "example5"
+'thisIs' + 'Example'    //evaluates to "thisIsExample"
+```
+
+##### Subtraction[-]
+
+This operator performs a subtraction operation on two operands.
+
+Example: "4-2" produces the result "2".
+
+##### Division[/]
+
+This operator performs division operation on two operands, whre the operand on the leftside(dividend) is divided by the operand on the right side(divisor). 
+
+Example: "15/3" produces the result "3".
+
+##### Multiplication[*]
+
+This operator performs multiplication operation on two operands. 
+
+Example: "4*2" produces the result "8".
+
