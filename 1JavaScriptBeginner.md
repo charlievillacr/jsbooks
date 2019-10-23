@@ -940,3 +940,11 @@ This operator performs multiplication operation on two operands.
 
 Example: "4*2" produces the result "8".
 
+##### Modulus[%]
+
+Also known as a Remainder operator, this operator results in the remainder of the two operands when they are divided.
+
+Example: "5%2" produces the result "1", "5%3" produces the result "2".
+
+#### Increment[++]
+
