@@ -2,9 +2,11 @@
 
 JavaScript Coding from the Ground Up
 
-1. JavaScript: Beginner PDF [https://github.com/charlievillacr/jsbooks/blob/master/1JavaScriptBeginner.pdf]
+1. JavaScript Beginners: 
 
-(Beginner Markdown) [https://github.com/charlievillacr/jsbooks/blob/master/1JavaScriptBeginner.md]
+- (PDF File) [https://github.com/charlievillacr/jsbooks/blob/master/1JavaScriptBeginner.pdf]
+
+- (Markdown File) [https://github.com/charlievillacr/jsbooks/blob/master/1JavaScriptBeginner.md]
 
 2. JavaScript: Intermediate [https://github.com/charlievillacr/jsbooks/blob/master/2JavaScriptIntermediate.pdf]
 
