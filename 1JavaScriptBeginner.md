@@ -531,33 +531,35 @@ var <variableName>; //Declares a variable
 or
 
 ```
-var <variableName> = value; //Declaration and assignment in the same line
+var <variableName> = value; //Declaration & assignment in the same line
 
 ```
 
 In the first method, we declare the variable first and then assign a value to it at some later point in the program.
 
-The only thing one must keep in mind here is that declaration must alwys come before the assigment.
+The only thing one must keep in mind here is that declaration must always come before the assigment.
 
 However, in the second method, both the declaration as well as the assignment happen in a single line.
 
-Let us look at some examples here
+Examples:
 
 ```
-var abc; //Declaration
+var abc;                //Declaration
 
-abc = "New variable"; //Assigment
+abc = "New variable";   //Assignment
 
-var num = 33; //Declaration and assignment
+var num = 33;           //Declaration & Assignment
 ```
 
 In the above example, the variable "abc" will store the string value "New Variable" while the variable "num" will store the number value 33.
 
 
+More examples:
+
 ```
-var marksScience = 85; //Variable name
+var marksScience = 85;                 //Variable name
 var marksMaths = 100;
-var total = marksScience + marksMaths; //add and store the result
+var total = marksScience + marksMaths; //Add & store the result
 
 ```
 
@@ -586,7 +588,9 @@ _fun
 marks2
 ```
 
-You would have noticed that we make use of an "equal to" symbol to assign some values to a variable. This "equal to" symbol is called assignment operator and is used to initialize a variable.
+You would have noticed that we make use of an "equal to" symbol to assign some values to a variable. 
+
+This "equal to" symbol is called assignment operator and is used to initialize a variable.
 
 #### Few important points to remember
 
@@ -612,7 +616,9 @@ var firstName="Amitabh",
     lastName="Kumar",
     age=70;
 
-4. Most of the time, variables are simply declared and are initialized at some later point in the program. As mentioned in the first point, after the declaration, the variable holds no value. To be precise, it holds the value undefined. 
+4. Most of the time, variables are simply declared and are initialized at some later point in the program. 
+
+As mentioned in the first point, after the declaration, the variable holds no value. To be precise, it holds the value undefined. 
 
 For  example:
 
@@ -622,7 +628,7 @@ var name;
 
 The variable "name" will contain the value undefined after the above statement is executed.
 
-5. even if you re-declare a JavaScript variable, it retains its previous value.
+5. Even if you re-declare a JavaScript variable, it retains its previous value.
 
 For example:
 
@@ -636,22 +642,22 @@ Even after the execution of these statements, the variable "name" will still hav
 
 ## Data Types
 
-Data types, as the name suggets, signifies the type of dta a variable can hold. A JavaScript variable can hold several types of data.
+Data types, as the name suggests, signifies the type of data a variable can hold. A JavaScript variable can hold several types of data.
 
-For example string, number, object, Boolean, etc.
+For example: string, number, object, Boolean, etc.
 
 ```
 var age = 70            //stores a Number
-var lastname = "Kumar"  //stores a String
+var lastName = "Kumar"  //stores a String
 var name = {firstName:"Amitabh", lastName:"Kumar"}; 
                         //stores an object
 var case = true;        //stores a Boolean
 
 ```
 
-Data types is an important aspect of programming because it specifies what kind of data a variable is holding.
+Data types are an important aspect of programming because it specifies what kind of data a variable is holding.
 
-This helps the compilar to understand what kind of operations ca be performed on them. 
+This helps the compiler to understand what kind of operations ca be performed on them. 
 
 The addition operator will have different results if applied to two numers and a radically different result if applied on two strings.
 
@@ -665,3 +671,86 @@ var age = 30+40;
 The variable "name" will store the concatenated value of both the string i.e. "Amit Kumar" while the variable age will store the added value of 30 & 40 i.e. 70.
 
 <!-- Page 35 -->
+
+Now consider the next example:
+
+var abc = 70 + "Amit";
+
+If we try and relate the above example with normal arithmetic, it does not make much sense. Adding a number to a string is not possible in normal arithmetic.
+
+However, it would be interesting to see how JavaScript will treat the above example.
+
+JavaScript will interpret the above example as follows:
+
+var abc = "70" + "Amit";
+
+Whenever we try to add a number with a string, JavaScript will treat the number as a string. However, what if our expression is a mix of several numbers and several strings! What will be the result in that case? 
+
+Let's look at the following two examples:
+
+
+```
+
+var temp = "Amit" + " " + "Kumar" + 30 + 40;
+var temp1 = 30 + 40 + "Amit" + " " + "Kumar";
+
+```
+
+In the above examples, the temp will store the value "Amit kumar3040" whreas the variable temp1 will store "70Amit Kumar". 
+
+How similar looking expressions produced different results?
+
+Let's see how JavaScript treats the above two example. JavaScript starts evaluating expressions from left to right. 
+
+So in the first case when it encountered a string, it considers all the remaining as string itself. Therefore 30 and 40 becomes two separate strings. 
+
+However, in the second example, since the numbers are written first, it first adds them and then concatenates with the remaining string.
+
+Before we dive into each type of JavaScript data types,I must point out that JavaScript has dynamic types. Let me explain what that means. 
+
+In C language, we use data types such as int, float, char, etc. Those are static data types which mean they cannot take any other type of value during the execution of the program. However, we see no such types here. 
+
+We simply declare a variable using the keyword "var" and then go on to mutate it the way we want. 
+
+Even if we have stored string value in the variable, at some later point in the program, we can assign a number to it. Therefore the types in JavaScrip are dynamic in nature.
+
+For example:
+
+```
+var rand;               //rand is undefined
+var rand =  "Random";   //rand stores an string
+var rand = 70;          //Now rand stores a number
+
+```
+
+Now that we have looked at the properties of data types, let's look at each data type in detail.
+
+Two kinds of data types in JavaScript:
+
+- Primitive data
+- Non-primitive or complex data
+
+Primitive is the predefined types of data which are inbuilt to a language. There are five primitive data types in JavaScript.
+
+- String
+- Number
+- Boolean
+- Null
+- Undefined
+
+Non-primitive or complex data are not provided by default but are defined by the programmer.
+
+For example:
+- arrays
+- objects
+- etc.
+
+## Strings
+
+Strings are nothing but a series of characters. They are either enclosed in a single or double quotes. Addition operation on them is nothing but a simple concatenation.
+
+For example:
+
+```
+var name = "Amit Kumar";
+var 
