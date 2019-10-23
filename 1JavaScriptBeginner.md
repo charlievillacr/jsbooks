@@ -741,6 +741,7 @@ Primitive is the predefined types of data which are inbuilt to a language. There
 Non-primitive or complex data are not provided by default but are defined by the programmer.
 
 For example:
+
 - arrays
 - objects
 - etc.
@@ -753,4 +754,47 @@ For example:
 
 ```
 var name = "Amit Kumar";
-var 
+var name2 = 'Javed';
+
+```
+Quotes inside a string are not a problem as long as they are different than the quotes surrounding the string.
+
+For example
+
+```
+var xyz = "It's done";
+var xyz1 = 'Friends call him "James"';
+
+## Numbers
+
+Unlike most of the ohter programming laguage, JavaScript does not have a concept of integer, float, etc. Instead, it just has a single concept of numbers which may or may not contain decimals.
+
+```
+var x = 74.00;      // Decimals
+var y = 33;         // Without decimals
+
+If the number is extremely large, it can be writtrn using scientific notation.
+
+For example:
+
+var x = 333e5;      // 33300000
+var y = 23e-5;      // 0.00023
+
+```
+
+## Booleans
+
+The concept of Boolean is almost same as that of other programming languages. Booleans have only two values: "true" and "false." The major use of hese comes while forming condinitonal statements.
+
+var a = true;
+var b = false;
+
+## Null
+
+Null means "nothing." The value null signifies the intentional absence of any object value. An object can be emptied by setting it to null.
+
+```
+var name = null;    //value becomes null
+```
+
+## Undefined
