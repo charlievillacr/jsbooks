@@ -28,9 +28,9 @@ Known as the "language of the web" because it is used in the development of an i
 
 It is the language which makes web applications dynamic so that users can interact with them, which provides a rich user experience.
 
-When JavaScript came into existence around 1995, most of the logical calculations and input validations in web pages were primarily donde using server-side languages like PHP. 
+When JavaScript came into existence around 1995, most of the logical calculations and input validations in web pages were primarily done using server-side languages like PHP. 
 
-The process was very long and unnecessarily involved two-way trips, first to end a request to the server and the get the data/error back to the client's computer. It was a huge letdown to UX. The need of that time was to make validations right on the client's computer before sending to the server, thereby reducing the bandwidth, which at that time was a major issue so that the user would not have to wait just to see if he made any errors while typing out that form.
+The process was very long and unnecessarily involved two-way trips, first to send a request to the server and the get the data/error back to the client's computer. It was a huge letdown to UX. The need of that time was to make validations right on the client's computer before sending to the server, thereby reducing the bandwidth, which at that time was a major issue so that the user would not have to wait just to see if he made any errors while typing out that form.
 
 JavaScript was created by Brendan Eich as "LiveScript" in 1995, which got renamed to "JavaScript." It was initially named "Mocha" but named JavaScript to gain traction with the language Java that was getting popular at the same time. The first major standarization ocurred in the form of ECMA standarization. The fist version developed still lacked features like RGEX ans JSON and some important built-in functions. The language kept getting developed and adding features to its repertoire.
 
