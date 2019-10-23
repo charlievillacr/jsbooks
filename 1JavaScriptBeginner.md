@@ -892,7 +892,7 @@ const = 3.14;   //Declaring & initializing a constant
 
 This chapter explained variables, data types, and constants.
 
-## Chapter 8
+## Chapter 8: Basic operators
 
 ### What are operators?
 
@@ -948,3 +948,27 @@ Example: "5%2" produces the result "1", "5%3" produces the result "2".
 
 #### Increment[++]
 
+Increases the value of its numerical operand by one. The position of this operator matters, i.e., whether it is placed before operand or after it.
+
+If placed before operand, then this situation is called prefix(example ++x), and the value is returned after the incrementing operation, and placed after the operand the this situation is called postfix(example x++), and value is returned before the incrementing operation.
+
+Example:
+
+```
+//say x value is 5
+console.log(++x);
+//value of x at this point is 6
+```
+
+```
+//say y value is 5 too
+console.log(y++); //prints 5 NOT 6
+//but value of y at this point is 6 so incrementation was done but after the expression returned value
+
+```
+
+##### Decrement[--]
+
+Decreases the value of its numerical operand by one. Similar to increment operator, this postfix and prefix rule applies here too.
+
+Example:
