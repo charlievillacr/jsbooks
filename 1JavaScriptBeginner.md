@@ -1121,5 +1121,124 @@ Function helps us write code in an efficent manner which not only improves the r
 
 Let us explore what a function is and why it is required!
 
+### Definition
 
+A function is a set of statements which are used to carry out a particular task.
 
+It is a simple as saying that you have a function which carries out the addition of two numbers.
+
+So at any point in the program, if you need to calculate the sum of two numbers, you just call this particular function and pass the two values to be added.
+
+The function will then retutn the desired value. LEt us first look at the syntax to declaring and defining a function and then we will discuss in detail about it.
+
+```
+function functionName(paramenter1, parameter2, parameter3) {
+    //set of statements to be executed
+}
+```
+
+As you can see above, a function definition starts with the keyword "function", followed by a unique function name, followed by a parentheshis ().
+
+The task which the function is supposed to execute is written curly braces {}.
+
+So whenever a function is called, all the statements whitin the curly braces will be executed.
+
+If you notice in the above syntax, there are a set of parameter whitin the parenthesis which are separated by commas.
+
+These are the values which the function requires in order to produce the disired result. Or in other words, these re the values one must pass while calling the function.
+
+Let us look at a simple example of a function which accepts two values and return their sum.
+
+```
+function addTwoNumbers(num1, num2){
+    return num1+num2; //Calculates and returns the sum
+}
+```
+
+One must note that a function remains dormant or inactive until and unless it is invoked or called in the mian program. 
+
+Example:
+Consider these analogous to a toes maker present in the kitchen. Toast maker is supposed to toast a bread which you supply to it. It remains inactive unless you need it.
+
+When you need it, you just put the bread inside and switch it on. It then does the usual. Same happens with a function too. It is executed when it is called or invoked.
+
+Each function should have its own unique function name. This is important because when you call a function, there should de no ambiguous situation.
+
+The parameters behave as local variables inside the function. IF you have knowledge about some other programming lamguages, you might have heard of procedure or subroutine. What is subroutine to them is function in JavaScript.
+
+A function is executed when it is invoked. This can happen because of one of the following scenarios:
+
+- When it is called from a JavaScript program.
+- Automatically invoked.
+- When some events occur(Events generally refers t an activy which happens on the web page).
+
+Whenever a return statement is encountered, the value is returned to the place where it is called from. Any statement beyond the return statement in the function is not executed.
+
+Therefore it is extremely important that the retutn statement is placed at the edn of the function.
+
+In some cases, we might have to place the return in the beginning, but then again that will happen in the case of conditional statements.
+
+Let us look at another example which calculates the product to two numbers. This will hep us in understanding the concept of function call in a better way.
+
+```
+function productCalc(num1, num2) {
+    return num1 * num2; //Product calculated & returned
+}
+
+var prod = productCalc(5,6)
+
+In the above example, the productCalc function is called, and the returned value is stored in the value prod. You can then use wherever required.
+
+Now that we have seen what function is and how to use them according to our need, let us look at why the function is very important in today's world of efficient programming.
+
+Advantages of functions:
+
+1. Reusability
+
+The main advantage of a function is the fact that it can be reused throughout the program. You can write a function which performs a certain task and the simply call it whenever you are required to perform the task.
+
+For example, If you have to sort some numbers, you can write a function which does that and then no matter how many times you are requiered to sort numbers, you can just call the function, and your job will be done.
+
+You escape from writing the same code for sorting again and again.
+
+2. Maintainability
+
+Maintainability refers to he task of refactoring a piece of code at a later point in time.
+
+Let us say, the code you wrote to sort a list of numbers has a bug. Now imagine you dont have the concept of functions. So basically whrever you have used that buggy code, you need to search it and then rectify a bug. With function, however, you just look at one place and correct the code. You need not visit several places. This saves you a lot of time and effort.
+
+3. Reduced code lenght
+
+With function in place, you don't need to write the same of codes everywhere. This reduces the length of the code significantly.
+
+Few points to remember about function
+
+1. You can use document.getElementById() to show the result of function anywhere in the HTML page.
+
+For example:
+
+```
+function add(a,b) {
+    return a+b;
+}
+document.getElementById("result".innerHTML = add(7,14);
+```
+
+2. Always use the () operator to invoke a function. In case you miss, the whole text of the function is returned.
+
+In the previous example, if you simply call add instead of add(), the HTML will contain the whole functin text.
+
+3. The function can be directy used as the value of a variable.
+
+For example:
+
+var x = add(5,7);
+var printString = "The result is " + x;
+
+Or,
+
+var printString = The result is " + add(5,7);
+
+In both the cases, the output will be the same.
+
+Always remember if youwrite a set code which is repeating several times thoughout the program, create a function out of it. Also, the lenght of the function should be kept as samll as possible.
