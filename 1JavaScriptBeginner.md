@@ -777,7 +777,7 @@ var xyz1 = 'Friends call him "James"';
 
 ## Numbers
 
-Unlike most of the ohter programming laguage, JavaScript does not have a concept of integer, float, etc. Instead, it just has a single concept of numbers which may or may not contain decimals.
+Unlike most of the other programming laguage, JavaScript does not have a concept of integer, float, etc. Instead, it just has a single concept of numbers which may or may not contain decimals.
 
 ```
 var x = 74.00;      // Decimals
@@ -794,7 +794,7 @@ var y = 23e-5;      // 0.00023
 
 ## Booleans
 
-The concept of Boolean is almost same as that of other programming languages. Booleans have only two values: "true" and "false." The major use of hese comes while forming condinitonal statements.
+The concept of Boolean is almost same as that of other programming languages. Booleans have only two values: "true" and "false." The major use of these comes while forming condinitonal statements.
 
 ```
 var a = true;
@@ -1002,4 +1002,124 @@ This operator substracts the value of the right operand from the left operand an
 
 Example: say x = 8 then "x -= 3" will make x's value 5.
 
-(Page 48)[https://github.com/charlievillacr/jsbooks/blob/master/1JavaScriptBeginner.pdf]
+### Multiplication assignment[*=]
+
+This operator multiplies the left and right operand and assigns the result to the left operand.
+
+Example: say x = 5 the "x *= 2" will make x's value 10.
+
+### Division Assignment[/=]
+
+This operator divides the left operand(dividend) by the right operand(divisor) and then assigns the result to the left operand.
+
+Example: say x = 10 then "x /= 2" will make x's value 5.
+
+### Modulus Assignmet[%=]
+
+This operator divides the left operand(dividend) byt the right  operand(divisor) and then assigns th REMAINDER to the left operand.
+
+Example: say x = 5 the "x %= 2" will make x's value 8.
+
+## Other Operators
+
+These are the type of operators which cannot be categorized under the above-mentioned categrories. Listed below are such operator.
+
+### typeof operator
+
+This operator returns the type of operand in string format. 
+
+Examples:
+
+```
+typeof 2                //evaluates to "number"
+typeof 1.23             //evaluates to "number"
+
+```
+```
+typeof "2"              //evaluates to "string"
+typeof 'hi'             //evaluates to "string"
+```
+```
+typeof true             //evaluates to "boolean"
+typeof false            //evaluates to "boolean"
+```
+```
+typeof {ob:1}           //evaluates to "object"
+typeof new Date()       //evaluates to "object" 
+```
+```
+typeof Math.cos         //evaluates to "function"
+typeof function(){}     //evaluates to "function"
+```
+
+
+### instanceof operator
+
+This operator checks if the first operand, which should be an object, is of a specific type, where the type to be checked is specified as the second operand.
+
+It returns true or false based on wther the object type is matched or not.
+
+Examples:
+
+```
+new String("Astring) instanceof String
+    //evaluates to true
+```
+
+```
+["this, "is", "array"] instanceof Array
+    //evaluates to true
+```
+
+```
+new String("Astring") instanceof Array
+    //evaluates to false
+```
+```
+["this", "is", "array"] instanceof String
+    //evaluates to false
+```
+
+### delete operator
+
+This operator removes a property from and object.
+
+Example:
+
+```
+var myObject = {
+    prop1: "test",
+    prop2: "test2",
+};
+
+delete my Object.prop1;     //deletes the prop1 property of object myObject
+```
+
+### in operator
+
+This operator checks whether a specified property(first operand) is in the specified object(second operand). It returns true of flase based on whether the property is in the object or not.
+
+Examples:
+
+```
+var myObject = {
+    prop1: "test",
+    prop2: "test2"
+};
+
+"prop1" in myObject;        //evaluates to true
+"prop45" in my Object;      //evaluates to false
+```
+
+This chapter explained operators in JavaScript.
+
+## Chapter 9: Functions in JavaScript
+
+Functions form an integral part of any programming language. If it wasn't for the function, our program would contain lots of redundant code.
+
+Function helps us write code in an efficent manner which not only improves the readability but also contribute a great deal while maintaining it.
+
+Let us explore what a function is and why it is required!
+
+
+
