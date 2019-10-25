@@ -186,7 +186,7 @@ This chapter talks about the main features of JavaScript in shot. The later chap
 
 JavaScript is being used on almost every website out there on the web.
 
-It adds so much functionality to any page that uses this scripting language. If it wasn't for JavaScript, we would probably be stuck in the 90s whre websites offered nun functionalitiesto the users, It was not at all intuitive as far as user-experience (UX) is concerned, which is perhaps the best thing that this language has given to us.
+It adds so much functionality to any page that uses this scripting language. If it wasn't for JavaScript, we would probably be stuck in the 90s where websites offered nun functionalitiesto the users, It was not at all intuitive as far as user-experience (UX) is concerned, which is perhaps the best thing that this language has given to us.
 
 JavaScript is practically everywhere. From the forms that you submit to he drop-down button on the menus of the modern websites to the numerous errors that it shows when you leave a field blank to the most annoying yet useful alert boxes, they all are made using JavaScript.
 
@@ -352,7 +352,7 @@ Example:
 
 ```
 
-Note that this attribute is only for JavaScript code loaded externally, i.e., if the src attribute is present in the same script tag as the defer attribute.
+Note that this attribute is only for JavaScript code loaded externally, i.e., if the ```src``` attribute is present in the same script tag as the defer attribute.
 
 There is one more way to embed JavaScript in HTML, which is to write JavaScript code in event handler attributes of elements. This way when that event fires, the JavaScript code which has been written as the attribute value is executed!
 
@@ -389,7 +389,7 @@ To solve this problem, we assign an id to the HTML element whose content we are 
 
 The next situation which arises in front of us is how we access an HTML element based on the id. In such case, we make use of a method called document.getElementbyId("ID").
 
-Changing the innerHTML property of an HTML element is a common way to display data in HTML.
+Changing the ```innerHTML``` property of an HTML element is a common way to display data in HTML.
 
 ## document.getElementbyId("ID")
 
@@ -485,7 +485,7 @@ You have probably seen on many websites an alert like "You seem to have entered 
 
  ## console.log()
 
- "console.log()" is a savior for developers. It is used for debugging purposes. The result from console.log() is not displayed on the web page. 
+ ```console.log()``` is a savior for developers. It is used for debugging purposes. The result from ```console.log()``` is not displayed on the web page. 
  
  Instead, it is displayed in the console. This is useful feature because sometimes you don't want testing data to be displayed on the web page.
 
@@ -604,7 +604,7 @@ var abc;
 
 Here the variable "abc" will not contain any value until we assign it some value.
 
-2. Many variables can be declared in a single statement. To do that, we start the statement with var and separate the variables by a comma.
+2. Many variables can be declared in a single statement. To do that, we start the statement with ```var``` and separate the variables by a comma.
 
 For example:
 
@@ -705,7 +705,7 @@ var temp1 = 30 + 40 + "Amit" + " " + "Kumar";
 
 ```
 
-In the above examples, the temp will store the value "Amit kumar3040" whreas the variable temp1 will store "70Amit Kumar". 
+In the above examples, the temp will store the value "Amit kumar3040" whereas the variable temp1 will store "70Amit Kumar". 
 
 How similar looking expressions produced different results?
 
@@ -930,7 +930,7 @@ Example: "4-2" produces the result "2".
 
 ##### Division[/]
 
-This operator performs division operation on two operands, whre the operand on the leftside(dividend) is divided by the operand on the right side(divisor). 
+This operator performs division operation on two operands, where the operand on the leftside(dividend) is divided by the operand on the right side(divisor). 
 
 Example: "15/3" produces the result "3".
 
@@ -1164,7 +1164,7 @@ When you need it, you just put the bread inside and switch it on. It then does t
 
 Each function should have its own unique function name. This is important because when you call a function, there should de no ambiguous situation.
 
-The parameters behave as local variables inside the function. IF you have knowledge about some other programming lamguages, you might have heard of procedure or subroutine. What is subroutine to them is function in JavaScript.
+The parameters behave as local variables inside the function. If you have knowledge about some other programming lamguages, you might have heard of procedure or subroutine. What is subroutine to them is function in JavaScript.
 
 A function is executed when it is invoked. This can happen because of one of the following scenarios:
 
@@ -1186,6 +1186,7 @@ function productCalc(num1, num2) {
 }
 
 var prod = productCalc(5,6)
+```
 
 In the above example, the productCalc function is called, and the returned value is stored in the value prod. You can then use wherever required.
 
@@ -1197,7 +1198,7 @@ Advantages of functions:
 
 The main advantage of a function is the fact that it can be reused throughout the program. You can write a function which performs a certain task and the simply call it whenever you are required to perform the task.
 
-For example, If you have to sort some numbers, you can write a function which does that and then no matter how many times you are requiered to sort numbers, you can just call the function, and your job will be done.
+For example, if you have to sort some numbers, you can write a function which does that and then no matter how many times you are requiered to sort numbers, you can just call the function, and your job will be done.
 
 You escape from writing the same code for sorting again and again.
 
@@ -1205,7 +1206,7 @@ You escape from writing the same code for sorting again and again.
 
 Maintainability refers to he task of refactoring a piece of code at a later point in time.
 
-Let us say, the code you wrote to sort a list of numbers has a bug. Now imagine you dont have the concept of functions. So basically whrever you have used that buggy code, you need to search it and then rectify a bug. With function, however, you just look at one place and correct the code. You need not visit several places. This saves you a lot of time and effort.
+Let us say, the code you wrote to sort a list of numbers has a bug. Now imagine you dont have the concept of functions. So basically wherever you have used that buggy code, you need to search it and then rectify a bug. With function, however, you just look at one place and correct the code. You need not visit several places. This saves you a lot of time and effort.
 
 3. Reduced code lenght
 
@@ -1226,7 +1227,7 @@ document.getElementById("result".innerHTML = add(7,14);
 
 2. Always use the () operator to invoke a function. In case you miss, the whole text of the function is returned.
 
-In the previous example, if you simply call add instead of add(), the HTML will contain the whole functin text.
+In the previous example, if you simply call add instead of add(), the HTML will contain the whole function text.
 
 3. The function can be directy used as the value of a variable.
 
@@ -1241,4 +1242,120 @@ var printString = The result is " + add(5,7);
 
 In both the cases, the output will be the same.
 
-Always remember if youwrite a set code which is repeating several times thoughout the program, create a function out of it. Also, the lenght of the function should be kept as samll as possible.
+Always remember if you write a set code which is repeating several times throughout the program, create a function out of it. Also, the lenght of the function should be kept as small as possible.
+
+## Chapter 10: Understanding Objects
+
+JavaScript is based on the paradigm of OOP(Object Oriented Pogramming) heance almost everything in it is an object or at least behaves like one, be it and array, function or regular expression(regex). An object is the most fundamental block of JavaScript.
+
+### What are objects?
+
+An object is a collection of properties and has a type. Just as in other programming languages, one can understand the concept of an object by comparing it to real-life objects.
+
+Let's take a car, for example, the same model car may have different color, i.e., have different properties, but it belongs to the same category which is a car, i.e., it is of the same type.
+
+Here is an example for understanding the object's concept as described above more clearly:
+
+```
+function cars(color, numberPlate) {
+    //this is like blueprint of an object, not the object it self
+    this.color = color;
+    this.numberPlate = numberPlate;
+}
+//Creating Objects:
+
+var car1 = new car("Green", 1234); //they are of same type
+var car2 =  new car("Red", 5678);   //but have different properties
+
+console.log(car1);  //outputs car details, i.e. Green and 1234 on console
+
+console.log(car2);  //outputs car2 details, i.e., Red and 5678 on console
+
+```
+
+## Accesing object's properties
+
+In JavaScript, you can access the object properties in the two ways, viz, the dot notation and the bracket notation. The syntax of both ways are as follows:
+
+```
+myObject.propertyName;      //dot notation
+myObject['propertyName'];   //bracket notation
+
+```
+
+Note that if the object property is integra;, then it can be accesed onl with bracker notation, example:
+
+```
+myObject.55     //WRONG
+myObject['55']; //RIGHT
+```
+
+### Creatin objects In JavScript
+
+Listed below are the ways to create objects in JavaScript:
+
+#### Object Literal
+
+This is the most commmon and probably the easieast way of creating an object in JavaScript.
+
+Example
+
+```
+var myObject = {
+    objectProperty1: 45,
+    objectProperty2: 'something else',
+    objectMethod: function() {//using function as an object property
+    console.log(this.objectProperty1, this.objectProperty2);   //prints object property on console
+    }
+};
+
+myObject.objectMethod(); //example call to object method/function
+
+```
+
+#### Using the 'new' keyword:
+
+You can create objects by calling the object constructor( a function used to initialize new objects) with 'new' keyword.
+
+Example
+
+```
+var myObject = new Object(); //contructor to initialize new object
+myObject.property1 = 45;
+myObject.property2 = 'something else';
+myObject.objectMethod = function() {/*...*/};
+```
+You can also define your own cosntructor function to create new objects; the constructor function is like a blueprint of your object, you can create many objects ensuring that they are all of the same types, though thay may have different properties.
+
+Example of custom constructor function:
+
+```
+function students(name, age, class) {
+    this.name = name;
+    this.age = age;
+    this.class = class
+}
+
+// using 'new' keyword to create object from custom constructor function:
+
+var student1 = new stuent("Sam", 14, 2);    //a student with name sam and age 17 of class 2
+
+var student2 = new student("Joe", 17, 11);  //a student of age 17 and class 11
+
+```
+
+### Nested objects
+
+You can create an object within an object.This can be done by assigning an object to an object's property. This is called nesting.
+
+Example
+```
+var student = {
+    name: "Mark",
+    marks: { //nesting
+        maths: 80,
+        english: 95
+    }
+};
+```
+
