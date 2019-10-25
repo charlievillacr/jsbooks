@@ -1344,7 +1344,7 @@ var student2 = new student("Joe", 17, 11);  //a student of age 17 and class 11
 
 ```
 
-### Nested objects
+#### Nested objects
 
 You can create an object within an object.This can be done by assigning an object to an object's property. This is called nesting.
 
@@ -1359,7 +1359,7 @@ var student = {
 };
 ```
 
-### Use of 'this' keyword In objects
+#### Use of 'this' keyword In objects
 
 The keyword 'this' inside an object refernces the object in which it is being used. It is used to access or assign values to the object propeties from within itself.
 
@@ -1372,4 +1372,89 @@ function objectConstructor(value) {
 }
 ```
 
-### Objects are reference data types
+#### Objects are reference data types
+
+Primitive data types are references by their values whereas reference data types are referenced by their address.
+
+Understanding the difference with and example:
+
+```
+// Primitive data types:
+var x = 45;
+var y = x;
+x = 10;
+console.log(x);     //10
+console.log(x);     //45
+```
+
+As you can see in the above example, altering the value of 'x' didn't have any effect on the value of 'y', but it is not the same with reference data types, let's see the same type of example with reference data types:
+
+```
+var x = { value: 45 }; // object, reference data type
+var y = x;
+x.value = 10;
+console.log(x.value);   //10
+console.log(y.value);   //10
+```
+
+As illustrated in the abpve example, altering the value of 'x' this time affected the value of 'y', this is because object being a reference data type, it being referenced by address so the same address ger assigned to 'y' and any change in that brings about change to both 'x' and 'y'. This is why objects in JavaScript are said to be Mutable, meaning changeable.
+
+#### Removing an object's property
+
+As studied in chapter 5. we can use th 'delete' operator to delete and object's property. To delete a property from an object, you have to write the 'delete' operator followed by the object with its property to be deleted.
+
+Example
+```
+var student = {
+    name:'John',
+    age: 16
+};
+console.log(student.age);   //16
+delete student.age;         //deleting the property
+console.log( studen.age );  gives an error saying 'undefined'
+```
+
+#### Looping through object's properties
+
+You can loop through object;s properties with the help of for-in loop.
+
+Example:
+
+```
+var carList = {
+    car1: 'Mustang',
+    car2: 'Beetle',
+    car3: 'Viper',
+};
+//looping through object's properties:
+for(var property in carList) {
+    console.log( property ); //outputs Mustang, Beetle, Viper
+}
+```
+An alternative to loop object's properties is to use Object.key() method of the Object class to obtain an array of keys and then loop through that array to access the properties of objects.
+
+Example
+
+```
+//using the same object as the example above
+for(const propertyName of Object.keys(carList)) {
+    console.log(carList[propertyName]);
+}
+```
+
+You have learned how to work with objects in JavaScript. I hope you have found this chapter useful!
+
+## Chapter 11: Scope of Variable
+
+Variables are created in JavaScript to act as containers to store data. Unlike other compiled languages like C/C++ where it is mandatory to define the tyope of data to be stored explicitly, JavaScript males no such division and stores every type of data like string, integers, floating point integers, Boolean, etc by the same constructor ```var```.
+
+```
+var x=2;
+var y=0.04;
+z='A';
+```
+
+All these variables have a scope and a lifetime which is the time  that the value tht they contain will be valid.
+
+### Scope
+
