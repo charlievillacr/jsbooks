@@ -1359,3 +1359,17 @@ var student = {
 };
 ```
 
+### Use of 'this' keyword In objects
+
+The keyword 'this' inside an object refernces the object in which it is being used. It is used to access or assign values to the object propeties from within itself.
+
+Example:
+
+```
+function objectConstructor(value) {
+    this.objectProperty = value;        //assigning new value to our object
+    console.log(this.objectProperty);   //accesing out object's property
+}
+```
+
+### Objects are reference data types
