@@ -1458,3 +1458,4 @@ All these variables have a scope and a lifetime which is the time  that the valu
 
 ### Scope
 
+Let's talk about the scope of a variable, first. JavaScript has teo
