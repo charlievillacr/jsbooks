@@ -1537,6 +1537,91 @@ It offers us so many functionalities that we can use. The language keeps on enha
 
 ## Chapter 12: Working with numbers in JavaScript
 
-Most of programming involves working with numbers. Wether it is working with the balance in a bank account, or sending encrypted mesages across to toher users, or nearly anything else, you will be performing arithmetic operations, trying to find square roots and so on, or finding random numbers to use. JavaScript makes these tasks a lot simplers tha many other languages, and most of these operations are very intuitive.
+Most of programming involves working with numbers. Whether it is working with the balance in a bank account, or sending encrypted mesages across to other users, or nearly anything else, you will be performing arithmetic operations, trying to find square roots and so on, or finding random numbers to use. JavaScript makes these tasks a lot simpler than many other languages, and most of these operations are very intuitive.
 
 ### How JavaScript stores numbers
+
+Before we get started on how to work with numbers, learning how exactly JavaScript sees them is necessary. JavaScript (JS) stores all numbers as floating point numbers - that is, all numbers can have decimal points.
+
+Unlike most C style languages, there is no separate type for integers. All numbers are stored in the Number type. You can store and use numbers as follows:
+
+var x = 12;
+var y = 2.66;
+var z = 312e-2;
+
+The last example is a case of using exponential notation. In this case, z is equal to 3.12. In many cases, if you have a number in a string, JS will try to convert it to a number for numeric calculations.
+
+For example:
+
+`var num = "1234";`
+
+If you try to use `num` numerical operations, it is treated as 1234. However, there is one very important quirk to this during addition, which we will see shortly.
+
+### Arithmetic operations
+
+First, let's look at how to perform basic arithmetic operation. These include addition, subtraction, multiplication and division. These are done as follows:
+
+`var x = 12 + 24;`
+`x will now store the value 36.`
+
+`var x = 24/2;`
+`x will now store the value 12.`
+
+`var x = 3-2;`
+`x will store the value 1.`
+
+`var x = 4*9;`
+`x will store the value 36.`
+
+Note that all of these will work using strings as numbers, as well, except for the addition operator +. Let's take a look at a few statements:
+
+`var x = 24 / "2";`
+`var y = "3" * "4";`
+`var z = "12"+ 3;`
+`var n = 36/ "Mike";`
+
+The first will result in 12, as expected, and so will the next. But, z will hold the value "123" and *not* 15. This because the + operator is performing *concatenation* - it is joining two strings together. In this case, JS converted 3 to "3" and then added those two strings together to get "123". You will have to keep this mind every time you are adding anything that could be a string!.
+
+The last one is also interesting. There is no obvious answer to this - 36 cant be divided by Mike. JS fills in with the value `NaN` - short for `Not A Number`. Every time you perform a numeric computation that can't result in a number, you will get `Nan` as the result.
+
+If you want to check if a variable is `NaN`, you can do this:
+
+`isNaN(n);``
+
+This will return true! You can also fill a variable with `NaN`yourself. Similarly, when you perform a calculation that results in infinity, JS will return the value Infinity.
+
+`var p = 12 / 0;`
+
+The variable p will have the value Infinity. Infinity is not the string "Infinity", it's a value.
+
+### Using built-in functions
+
+For simple things like getting a number down to a certain number of decimal places, or converting it to a string, JS has built-in function. Most of these functions are used by the syntax: `object.method(arguments);`
+
+To convert a number to a string, you can use the `toString()` method:
+
+`var x = 25;`
+`var x_in_string = x.toString;`
+
+`x_in_string` will be equal to "25". The toExponential(n) method writes the number out in sicentific notation, with n digits behinf the decimal point. The argument `n`is optional, and you can replace it with any number.
+
+`var x = 25.321;`
+`var x_in_exponents = x.toExponent(3);`
+
+`x_in_exponents` will be `"25.321e0"`. Note that the uotput is a tring. If you cancall to `Exponent()`without an argument, it will not round the number at all. The toFixed(n) method works to output eh number with a certain number of decimal places.
+
+`var x = 25.1168;`
+`var x_to_2 = x.toFixed(2);`
+
+`x_to_2` will be `"25.12"`. Note that ir rounds the number. Often you will need to convert a string into a number. This may be espcecially sueful in the case we saw above where you tried to add a string and a number. To prevent a concatenation, you should use the function `Number()`. This function is used differently:
+
+`var x = "25.12";`
+`var y = Number(x)`
+
+Now `y` will have the value `25`. There are two more functions you can use: `parseInt()`and `parseFloat()`. These two functions take the first number in the string and return it rounded and as with decimal respectively.
+
+`var x = "10.2 20 30";`
+`var y = parseInt(x);`
+`var z = parseFloat(x);`
+
+`y`will be `10`and x will be 10.2. All of these functions will return a `NaN`if the number cannot be converted.
