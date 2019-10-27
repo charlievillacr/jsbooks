@@ -1491,15 +1491,52 @@ In JavaScript, the nested function stores references to the variable declared in
 
 Example:
 
+```
 function foo(name){
     return function(){
         bar(name);
     }
 }
 function bar(name){
-    console.log("Hello"+name);
+    console.log("Hello "+name);
 }
+```
 
 When the function is called with something like, `foo("John")` the `console.log` will display `Hello John` on the display.
 
-How's this happenning? Go through that code snippet once again. The `foo()`
+How's this happenning? Go through that code snippet once again.
+
+The `foo()` function makes a call to the function `bar()` whose signature has an argument with it.
+
+When `foo()` is called, the inner nested function gets the reference to the argument of `foo()` in this case, which is "John". This reference to the variable that the nested function `bar()` got is a closure in JavaScript.
+
+### ES6 specification
+
+ECMA script is the class of JavaScript and acts like a standerd fot he language. JavaScript has added features in the 2015 version fo the script which includes the introduction of a block/scoped variables, let and const.
+
+For these variables {...} defines a new scope. When the variable like them are initialized, it only affects the scope in which thay're defined in.
+
+Example:
+```
+let a=2;
+const b=3;
+{
+    let a=3;
+    console.log(a);
+}
+console.log(a);
+```
+
+Both of these `console.log()` statements will print different values. The reason being that both the variables "a" have been defined in different scopes.
+
+#### Conclusion
+
+JavaScript variables are the easiest to work with as they involve no type setting as is the case with other compiled language, and hence is called weakly-typed.
+
+It offers us so many functionalities that we can use. The language keeps on enhancing and since 2015 ha dded the let and const variables that make life of a JavaScript programmer easier and interesting.
+
+## Chapter 12: Working with numbers in JavaScript
+
+Most of programming involves working with numbers. Wether it is working with the balance in a bank account, or sending encrypted mesages across to toher users, or nearly anything else, you will be performing arithmetic operations, trying to find square roots and so on, or finding random numbers to use. JavaScript makes these tasks a lot simplers tha many other languages, and most of these operations are very intuitive.
+
+### How JavaScript stores numbers
