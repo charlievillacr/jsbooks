@@ -1,10 +1,10 @@
 # JavaScript Beginner
-- Coding from the ground up
-- by Keith Dvorjak
+
+Coding from the ground up, by Keith Dvorjak
 
 ## Table of Contents - Chapters
 
-1. Introduction
+1. Introduction](## Chapter 1: Introduction
 2. Main features of JavaScript
 3. Real-life uses of JavScript
 4. Your first JavaScript program
@@ -21,14 +21,13 @@
 15. Events in JavaScript
 16. Conclusion
 
-## Chapter 1: Introduction
+## Chapter 1 Introduction
 
-
-Known as the "language of the web" because it is used in the development of an incredibly high number of applications on the web and the mobile paradigm alike. 
+Known as the "language of the web" because it is used in the development of an incredibly high number of applications on the web and the mobile paradigm alike.
 
 It is the language which makes web applications dynamic so that users can interact with them, which provides a rich user experience.
 
-When JavaScript came into existence around 1995, most of the logical calculations and input validations in web pages were primarily done using server-side languages like PHP. 
+When JavaScript came into existence around 1995, most of the logical calculations and input validations in web pages were primarily done using server-side languages like PHP.
 
 The process was very long and unnecessarily involved two-way trips, first to send a request to the server and the get the data/error back to the client's computer. It was a huge letdown to UX. The need of that time was to make validations right on the client's computer before sending to the server, thereby reducing the bandwidth, which at that time was a major issue so that the user would not have to wait just to see if he made any errors while typing out that form.
 
@@ -57,9 +56,9 @@ JavaScript began as a client-side scripting language but is being used on the ba
 JavaScript has built-in as well as user defined methods/functions that allow themselves to get bound to certain buttons  or elements and can be called whenever and wherever. The functions are being actively used to automate tasks like the:
 
 - setTimeout()
-- or setInterval() 
+- or setInterval()
 
-functions that can be called aftter a certain period of time to do dome task. 
+functions that can be called aftter a certain period of time to do dome task.
 
 JavaScript can be used in the HTML file itself, if it is written into the ```<script></script>``` tags, and can also be attached to it as an external file. The extension of a JavaScript program is '.js.'
 
@@ -76,11 +75,11 @@ Object-Oriented design is perhaps the most important feature of JavaScript, as i
 
 Most of the features of JavaScript are more or less same as that of other common programming languages. Almost all the programming languages have these features. The main features are as follows.
 
-1. JavaScript Variables
+### JavaScript Variables
 
 One of the very important features of JavaScript is variables. They act as the storage containers for values. In other words, they are the names of the memory locations at which the values are stored.
 
-These values can be an integer, decimal values, strings or single characters. The variable names have to be unique. 
+These values can be an integer, decimal values, strings or single characters. The variable names have to be unique.
 
 This is important because otherwise, this will create a great amout of confusion. The name of the variable can start from an alphabet, dollar sign or underscore signs.
 
@@ -92,9 +91,9 @@ var abcd:
 
 var $abc;
 
-2. JavaScript Objects
+### JavaScript Objects
 
-Objects are nothing but a collection of some date values. These generally are written as name-value pairs. 
+Objects are nothing but a collection of some date values. These generally are written as name-value pairs.
 
 For example:
 
@@ -102,12 +101,12 @@ var name = {firstName:"Amit",
                 lastName:"Kumar",
                 age:70};
 
-To access the valus in an object, we use dot notation. 
+To access the valus in an object, we use dot notation.
 
-For example: 
+For example:å
 If you want to access the lastName present in name object, we can write that as name.lastName. Arrays are a type of object.
 
-3. JavaScript Comments
+### JavaScript Comments
 
 Comment is a feature which is often neglected by novice programmers, but as one starts getting experienced at coding, they realize the great value i brings to the code. Thise are basically a way to create notes in the code. This improves th readability of the code. They are not executed by the compiler.
 
@@ -127,7 +126,7 @@ b. Multi-line comments
     For example:
     /* This program calculates the factorial of a number */
 
-4. JavaScript Functions OR methods
+### JavaScript Functions OR methods
 
 Functions form an integral part of any programming language. Functions helps us write code in an efficient manner which not only improves the readability but also contribute a great deal while maintaining it. A function is a set of statements which are used to carry out a particular task.
 
@@ -139,11 +138,11 @@ function addTwoNumbers(num1, num2) {
 
 You will learn about functions in detail in later chapters.
 
-5. Conditional statements
+### Conditional statements
 
-Conditional statements are used when we need to make certain decisions based on some conditions. 
+Conditional statements are used when we need to make certain decisions based on some conditions.
 
-For example: 
+For example:
 
 If there is a program to find out if a person is eligible to vote or not, we input the age of the person and compare it with 18. If it is more than 18, we say that person is elible to vote or else not.
 
@@ -153,7 +152,7 @@ if(age > 18)
 else
     alert("Ineligible to vote");
 
-6. Looping constructs in JavaScript
+### Looping constructs in JavaScript
 
 Loops are used to execute a certain part of code several time repeatedly. There are various ways in which we can implement loops. E.g. For loop, while loop, do-while loop.
 
@@ -163,13 +162,13 @@ for(i = 0;i < 10; i++)
     alert(i);
 }
 
-7. Event handling in JavaScript
+### Event handling in JavaScript
 
-Events are some activity which happens on the web page. 
+Events are some activity which happens on the web page.
 
-For example, a mouse click on the web page, loading of the web page, etc. Event handling is a way to handle what happens when cuch event occurs. 
+For example, a mouse click on the web page, loading of the web page, etc. Event handling is a way to handle what happens when cuch event occurs.
 
-Some common event handlers are: 
+Some common event handlers are:
 
 - onclick
 - onload
@@ -178,11 +177,11 @@ Some common event handlers are:
 
 This is a very important concept. Developing any web application without event handlers does no make any sense.
 
-<!-- Buscar más sobre: Event handlers -->
+<!-* Buscar más sobre: Event handlers -->
 
 This chapter talks about the main features of JavaScript in shot. The later chapters of this book explain these features in great detail.
 
-## Chapter 3 - Real-Life Uses of JavaScript
+## Chapter 3 * Real-Life Uses of JavaScript
 
 JavaScript is being used on almost every website out there on the web.
 
@@ -198,7 +197,7 @@ Let's look at some practical, real-life scenarios where JavaScript has proved to
 
 Case 1: Form Validation
 
-A good form on the internet is said to be that one that utilizes the power of JavaScript to validate user-input and display errors whenever there is an empty field, inappropiate field inputs occur. Let's assume the case if JavaScript was not used here. 
+A good form on the internet is said to be that one that utilizes the power of JavaScript to validate user-input and display errors whenever there is an empty field, inappropiate field inputs occur. Let's assume the case if JavaScript was not used here.
 
 In that case, the user who is filling the form would have to first submit the form, and since he does not know whether he's made any errors yet, and when it is submitted, it is sent to the server be processed by a POST request, and then the server responds with any error(s) that might have ocurred.
 This is a two-way trip.
@@ -207,7 +206,7 @@ Much of this can be saved if we used client-side validation using JavaScript. An
 
 Case 2: DOM Manipulation
 
-Most of the time, the server responds with a static web page that the browser renders and displays it on the browser. But, what if we get the power to manipulate a few elements on the web page? 
+Most of the time, the server responds with a static web page that the browser renders and displays it on the browser. But, what if we get the power to manipulate a few elements on the web page?
 
 Wouldn't it feel exciting if we could change the state of things, their order, their properties and even their attributes and it could become a whole new thing altogether? Well, it turns out JavaScript does give us all that might to make all that happen. Pretty sweet.
 
@@ -229,19 +228,18 @@ That's where JavaScript come in.
 
 JavaScript adds additional functionality to a rather static web page and lets users interact with the various elements present in the page.
 
-In this chapter, you'll make your very first JavaScript program, the famous "Hello, World!" that will introduce you to this vast yet simple language that is often touted as the "Language of the Web". 
+In this chapter, you'll make your very first JavaScript program, the famous "Hello, World!" that will introduce you to this vast yet simple language that is often touted as the "Language of the Web".
 
 It is presumed here that you are aware of HTML and CSS syntax, as they'll be used thought the text.
 
 Web Browsers render HTML and CSS and display it on the screen, and have built-in JavaScript interpreter that understands the language and executes the tasks of the program.
 
-But for browsers to know where to start with th interpretation of JavaScript, we need to make use of the ```<script>``` tag that tells the browser the starting point of the program. 
+But for browsers to know where to start with th interpretation of JavaScript, we need to make use of the ```<script>``` tag that tells the browser the starting point of the program.
 
 ```</script>``` tells the browser that it has reached the end of the program.
 
 JavaScript is written within the tags:
-```<script> </script>```, and these tags are most commonly placed just above the 
-```</body>```tag.
+```<script> </script>```, and these tags are most commonly placed just above the ```</body>```tag.
 
 This is done to make the script load after the initial page load that makes the page load faster.
 
@@ -255,7 +253,7 @@ Let's create a program that makes and alert box with the message "Hello, World!"
         <title>First Program</title>
     </head>
     <body>
-       <h1>This is your first JavaScript program</h1> 
+       <h1>This is your first JavaScript program</h1>
        <script>
            alert('Hello Carlos!');
        </script>
@@ -290,7 +288,6 @@ In order to embed JavaScript directly in a page, you can use the:
 The syntax of the script tag is as follows:
 
 ```
-
 <script>
 
 // JavaScript code goes here, example:
@@ -341,7 +338,7 @@ Example:
 
 ## async
 
-If this attribute is present in the script tag then the JavaScript file associated with script tag is executed asynchronously while the page continues to load. 
+If this attribute is present in the script tag then the JavaScript file associated with script tag is executed asynchronously while the page continues to load.
 
 If this tag is not present then the script is first executed, and the the page load continues.
 
@@ -422,7 +419,7 @@ The complete web page can be termed as a document. So as the name of this functi
 
 If is is used after the page is loaded, it not only writes but also replaces the existing (old) value with the new one.
 
-Therefore, one should be very careful while working with them. 
+Therefore, one should be very careful while working with them.
 
 It is mainly used for testing purposes.
 
@@ -449,8 +446,7 @@ document.write(1+2);
  As I was saying, using document.write() after an HTML document is fully loaded will delete all existing HTML. Let us see this through an example:
 
 ``` 
- 
- <!DOCTYPE html>
+<!DOCTYPE html>
  <html>
  <body>
 
@@ -483,18 +479,17 @@ You have probably seen on many websites an alert like "You seem to have entered 
 
 ```
 
- ## console.log()
+## console.log()
 
- ```console.log()``` is a savior for developers. It is used for debugging purposes. The result from ```console.log()``` is not displayed on the web page. 
- 
- Instead, it is displayed in the console. This is useful feature because sometimes you don't want testing data to be displayed on the web page.
+```console.log()``` is a savior for developers. It is used for debugging purposes. The result from ```console.log()``` is not displayed on the web page.
 
- Those data are used by developer to know if everything is working fine on the website or not. 
- 
- In case you are wondering what a console looks like, press: ctrl + shift + I in Google Chrome on the desired web page.
+Instead, it is displayed in the console. This is useful feature because sometimes you don't want testing data to be displayed on the web page.
+
+Those data are used by developer to know if everything is working fine on the website or not.
+
+In case you are wondering what a console looks like, press: ctrl + shift + I in Google Chrome on the desired web page.
 
 ``` 
- 
 <!DOCTYPE html>
 <html>
 <body>
@@ -518,7 +513,7 @@ The above were the four ways in which we display data in JavaScript. However, it
 
 Variables are always an important aspect of any programming language. They are used to store values which can be later addressed using those variable names. Same goes with JavaScript. Let us look at the syntax for creating a variable:
 
-##### Variables Syntax
+#### Variables Syntax
 
 ```
 
@@ -569,7 +564,7 @@ All the variables which are used in the program, must have unique names or else 
 
 These unique names are called identifiers. For naming a variable, certain rules must be followed.
 
-#### Rules for naming a variable
+### Rules for naming a variable
 
 - Names must start with a letter, dollar($), or underscore(_).
 
@@ -588,13 +583,13 @@ _fun
 marks2
 ```
 
-You would have noticed that we make use of an "equal to" symbol to assign some values to a variable. 
+You would have noticed that we make use of an "equal to" symbol to assign some values to a variable.
 
 This "equal to" symbol is called assignment operator and is used to initialize a variable.
 
 #### Few important points to remember
 
-1. When you simply declare a variable, it holds no value.
+##### When you simply declare a variable, it holds no value
 
 For example:
 
@@ -604,7 +599,7 @@ var abc;
 
 Here the variable "abc" will not contain any value until we assign it some value.
 
-2. Many variables can be declared in a single statement. To do that, we start the statement with ```var``` and separate the variables by a comma.
+##### Many variables can be declared in a single statement. To do that, we start the statement with ```var``` and separate the variables by a comma
 
 For example:
 
@@ -612,7 +607,7 @@ For example:
 var firstName="Amitabh", lastName="Kumar", age=70;
 ```
 
-3. The declaration of variables can span multiple lines.
+##### The declaration of variables can span multiple lines
 
 ```
 
@@ -621,9 +616,9 @@ var firstName="Amitabh",
     age=70;
 ```
 
-4. Most of the time, variables are simply declared and are initialized at some later point in the program. 
+##### Most of the time, variables are simply declared and are initialized at some later point in the program
 
-As mentioned in the first point, after the declaration, the variable holds no value. To be precise, it holds the value undefined. 
+As mentioned in the first point, after the declaration, the variable holds no value. To be precise, it holds the value undefined.
 
 For  example:
 
@@ -633,7 +628,7 @@ var name;
 
 The variable "name" will contain the value undefined after the above statement is executed.
 
-5. Even if you re-declare a JavaScript variable, it retains its previous value.
+##### Even if you re-declare a JavaScript variable, it retains its previous value
 
 For example:
 
@@ -644,7 +639,6 @@ var name;
 
 Even after the execution of these statements, the variable "name" will still have the value "Amitabh."
 
-
 ## Data Types
 
 Data types, as the name suggests, signifies the type of data a variable can hold. A JavaScript variable can hold several types of data.
@@ -654,7 +648,7 @@ For example: string, number, object, Boolean, etc.
 ```
 var age = 70            //stores a Number
 var lastName = "Kumar"  //stores a String
-var name = {firstName:"Amitabh", lastName:"Kumar"}; 
+var name = {firstName:"Amitabh", lastName:"Kumar"};
                         //stores an object
 var case = true;        //stores a Boolean
 
@@ -662,7 +656,7 @@ var case = true;        //stores a Boolean
 
 Data types are an important aspect of programming because it specifies what kind of data a variable is holding.
 
-This helps the compiler to understand what kind of operations ca be performed on them. 
+This helps the compiler to understand what kind of operations ca be performed on them.
 
 The addition operator will have different results if applied to two numers and a radically different result if applied on two strings.
 
@@ -693,10 +687,9 @@ JavaScript will interpret the above example as follows:
 var abc = "70" + "Amit";
 ```
 
-Whenever we try to add a number with a string, JavaScript will treat the number as a string. However, what if our expression is a mix of several numbers and several strings! What will be the result in that case? 
+Whenever we try to add a number with a string, JavaScript will treat the number as a string. However, what if our expression is a mix of several numbers and several strings! What will be the result in that case?
 
 Let's look at the following two examples:
-
 
 ```
 
@@ -705,21 +698,21 @@ var temp1 = 30 + 40 + "Amit" + " " + "Kumar";
 
 ```
 
-In the above examples, the temp will store the value "Amit kumar3040" whereas the variable temp1 will store "70Amit Kumar". 
+In the above examples, the temp will store the value "Amit kumar3040" whereas the variable temp1 will store "70Amit Kumar".
 
 How similar looking expressions produced different results?
 
-Let's see how JavaScript treats the above two example. JavaScript starts evaluating expressions from left to right. 
+Let's see how JavaScript treats the above two example. JavaScript starts evaluating expressions from left to right.
 
-So in the first case when it encountered a string, it considers all the remaining as string itself. Therefore 30 and 40 becomes two separate strings. 
+So in the first case when it encountered a string, it considers all the remaining as string itself. Therefore 30 and 40 becomes two separate strings.
 
 However, in the second example, since the numbers are written first, it first adds them and then concatenates with the remaining string.
 
-Before we dive into each type of JavaScript data types,I must point out that JavaScript has dynamic types. Let me explain what that means. 
+Before we dive into each type of JavaScript data types, I must point out that JavaScript has dynamic types. Let me explain what that means.
 
-In C language, we use data types such as int, float, char, etc. Those are static data types which mean they cannot take any other type of value during the execution of the program. However, we see no such types here. 
+In C language, we use data types such as int, float, char, etc. Those are static data types which mean they cannot take any other type of value during the execution of the program. However, we see no such types here.
 
-We simply declare a variable using the keyword "var" and then go on to mutate it the way we want. 
+We simply declare a variable using the keyword "var" and then go on to mutate it the way we want.
 
 Even if we have stored string value in the variable, at some later point in the program, we can assign a number to it. Therefore the types in JavaScrip are dynamic in nature.
 
@@ -877,9 +870,9 @@ If we operate typeof on null, it returns an objecy whereas if we operate typeof 
 
 Constant as the name suggets are those variable whose value cannot be changed.
 
-These are declared using const Keyword and must be assigned a value during the time of declaration. 
+These are declared using const Keyword and must be assigned a value during the time of declaration.
 
-It can either be local to a function or can be global variable. Constants once assigned cannot be changed. 
+It can either be local to a function or can be global variable. Constants once assigned cannot be changed.
 
 Thier value remains read-only throughout the program.
 
@@ -894,7 +887,7 @@ This chapter explained variables, data types, and constants.
 
 ## Chapter 8: Basic operators
 
-### What are operators?
+### What are operators
 
 Operators are basically symbols which act as a function, though they differ from functions syntax-wise. They take input(operands) and produce a certain output based on the operands.
 
@@ -910,7 +903,7 @@ Operators are generaly classified on the basis of the type of operation they do.
 
 As the name hunts, these are operators which perform arithmetic tasks on the operand(s). Listed below are the arithmetic operators.
 
-##### Addition[+]
+#### Addition[+]
 
 This operator performs an addition operation on two operands on two operands if both of them are numerical, if anyone or both of the two operands  are numerical, if anyone or both of the two operands are of string type then this operator concatenates / joins the two operands.
 
@@ -922,25 +915,25 @@ Examples:
 'thisIs' + 'Example'    //evaluates to "thisIsExample"
 ```
 
-##### Subtraction[-]
+#### Subtraction[-]
 
 This operator performs a subtraction operation on two operands.
 
 Example: "4-2" produces the result "2".
 
-##### Division[/]
+#### Division[/]
 
-This operator performs division operation on two operands, where the operand on the leftside(dividend) is divided by the operand on the right side(divisor). 
+This operator performs division operation on two operands, where the operand on the leftside(dividend) is divided by the operand on the right side(divisor).
 
 Example: "15/3" produces the result "3".
 
-##### Multiplication[*]
+#### Multiplication[*]
 
-This operator performs multiplication operation on two operands. 
+This operator performs multiplication operation on two operands.
 
 Example: "4*2" produces the result "8".
 
-##### Modulus[%]
+#### Modulus[%]
 
 Also known as a Remainder operator, this operator results in the remainder of the two operands when they are divided.
 
@@ -967,7 +960,7 @@ console.log(y++); //prints 5 NOT 6
 
 ```
 
-##### Decrement[--]
+#### Decrement[--]
 
 Decreases the value of its numerical operand by one. Similar to increment operator, this postfix and prefix rule applies here too.
 
@@ -986,7 +979,7 @@ These operators are used to assign value to variables. Value is assigned to the 
 
 ### Equal[=]
 
-This operator simple assigns the value of tis right operand to the left operand. 
+This operator simple assigns the value of tis right operand to the left operand.
 
 Example: "x=5" this assigns 5 to x, so now the value of x is 5.
 
@@ -1026,7 +1019,7 @@ These are the type of operators which cannot be categorized under the above-ment
 
 ### typeof operator
 
-This operator returns the type of operand in string format. 
+This operator returns the type of operand in string format.
 
 Examples:
 
@@ -1045,13 +1038,12 @@ typeof false            //evaluates to "boolean"
 ```
 ```
 typeof {ob:1}           //evaluates to "object"
-typeof new Date()       //evaluates to "object" 
+typeof new Date()       //evaluates to "object"
 ```
 ```
 typeof Math.cos         //evaluates to "function"
 typeof function(){}     //evaluates to "function"
 ```
-
 
 ### instanceof operator
 
@@ -1192,9 +1184,9 @@ In the above example, the productCalc function is called, and the returned value
 
 Now that we have seen what function is and how to use them according to our need, let us look at why the function is very important in today's world of efficient programming.
 
-Advantages of functions:
+### Advantages of functions
 
-1. Reusability
+#### Reusability
 
 The main advantage of a function is the fact that it can be reused throughout the program. You can write a function which performs a certain task and the simply call it whenever you are required to perform the task.
 
@@ -1202,19 +1194,19 @@ For example, if you have to sort some numbers, you can write a function which do
 
 You escape from writing the same code for sorting again and again.
 
-2. Maintainability
+#### Maintainability
 
 Maintainability refers to he task of refactoring a piece of code at a later point in time.
 
 Let us say, the code you wrote to sort a list of numbers has a bug. Now imagine you dont have the concept of functions. So basically wherever you have used that buggy code, you need to search it and then rectify a bug. With function, however, you just look at one place and correct the code. You need not visit several places. This saves you a lot of time and effort.
 
-3. Reduced code lenght
+#### Reduced code lenght
 
 With function in place, you don't need to write the same of codes everywhere. This reduces the length of the code significantly.
 
 Few points to remember about function
 
-1. You can use document.getElementById() to show the result of function anywhere in the HTML page.
+#### You can use document.getElementById() to show the result of function anywhere in the HTML page
 
 For example:
 
@@ -1225,11 +1217,11 @@ function add(a,b) {
 document.getElementById("result".innerHTML = add(7,14);
 ```
 
-2. Always use the () operator to invoke a function. In case you miss, the whole text of the function is returned.
+#### Always use the () operator to invoke a function. In case you miss, the whole text of the function is returned
 
 In the previous example, if you simply call add instead of add(), the HTML will contain the whole function text.
 
-3. The function can be directy used as the value of a variable.
+#### The function can be directy used as the value of a variable
 
 For example:
 
@@ -1248,7 +1240,7 @@ Always remember if you write a set code which is repeating several times through
 
 JavaScript is based on the paradigm of OOP(Object Oriented Pogramming) heance almost everything in it is an object or at least behaves like one, be it and array, function or regular expression(regex). An object is the most fundamental block of JavaScript.
 
-### What are objects?
+### What are objects
 
 An object is a collection of properties and has a type. Just as in other programming languages, one can understand the concept of an object by comparing it to real-life objects.
 
@@ -1420,7 +1412,6 @@ You can loop through object;s properties with the help of for-in loop.
 
 Example:
 
-```
 var carList = {
     car1: 'Mustang',
     car2: 'Beetle',
@@ -1430,32 +1421,85 @@ var carList = {
 for(var property in carList) {
     console.log( property ); //outputs Mustang, Beetle, Viper
 }
-```
+
 An alternative to loop object's properties is to use Object.key() method of the Object class to obtain an array of keys and then loop through that array to access the properties of objects.
 
 Example
 
-```
-//using the same object as the example above
-for(const propertyName of Object.keys(carList)) {
-    console.log(carList[propertyName]);
-}
-```
+`//using the same object as the example above`
+`for(const propertyName of Object.keys(carList)) {`
+    `console.log(carList[propertyName]);`
+`}`
 
 You have learned how to work with objects in JavaScript. I hope you have found this chapter useful!
 
 ## Chapter 11: Scope of Variable
 
-Variables are created in JavaScript to act as containers to store data. Unlike other compiled languages like C/C++ where it is mandatory to define the tyope of data to be stored explicitly, JavaScript males no such division and stores every type of data like string, integers, floating point integers, Boolean, etc by the same constructor ```var```.
+Variables are created in JavaScript to act as containers to store data. Unlike other compiled languages like C/C++ where it is mandatory to define the type of data to be stored explicitly, JavaScript makes no such division and stores every type of data like string, integers, floating point integers, Boolean, etc by the same constructor `var`.
 
-```
-var x=2;
-var y=0.04;
-z='A';
-```
+`var x=2;`
+`var y=0.04;`
+`z='A';`
 
-All these variables have a scope and a lifetime which is the time  that the value tht they contain will be valid.
+All these variables have a scope and a lifetime which is the time that the value tht they contain will be valid.
 
 ### Scope
 
-Let's talk about the scope of a variable, first. JavaScript has teo
+Let's talk about the scope of a variable, first. JavaScript has two scopes:
+
+- Global
+- Local
+
+If we say that a variable has global scope, it means that the variable can be used throughout the `script`, in all functions that are within the `script`.
+
+It can be accesed, modified everywhere. While in the case of a variable that has local scope, they can be accesed or modified only within the function withing which they have been defined.
+
+A variable that is declared inside a function is a Local variable. It is only created when the function is executed, stays alive 'till the function is running and the gets destroyed automatically. The variable cannot be accesed anywhere outside that function.
+
+varmyVar = "Something";
+functionmyFunc(){
+    `varmyVar="Another thing";
+}
+
+As can be seen, we can have a local as well as global variable of the same name. The difference occurs at the place at which they're being called.
+
+As can be seen, we can have a local as well as global variable of the same name. The difference occurs at the place at which they're being called.
+
+For example, if we print value of the variable `myVarinside`, the function we'd get is `"Another thing"` printed on the screen. On the other hand, if we try to print the value of `myVar` outside that function, we'd get `"Something"` printed on the display. So we can see it's just the placement of the variable that decides entirely whether it's a local or a global variable.
+
+When JavaScript starts to execute a function, it first looks for all the variable declarations that exist inside the function, for example, `var foo`. Then it creates all the variables with the initial value inside the function, it still is initialized with the value undefined. Then, JavaScript starts to execute the present statements line by line.
+
+When it reaches the line where the variable declaration is made, it gives that variable that value, removing the unfined label.
+
+Example:
+
+`var something = 100;`
+`foo();`
+`function foo(){`
+`console.log(something);`
+`if(false)`
+`var something = 112;`
+`}`
+
+The `console.log` here will print `undefined`. The reason is that when the function is executed, the variable that is declared inside that `if` statement is taken and the value is set to be `undefined`. Then that console.log statement occurs.
+
+Had the `if`statement not there, we sould have got 100 printed on the console.
+
+### Closures
+
+In JavaScript, the nested function stores references to the variable declared in the same scope as the function. This set of references is called *Closures*.
+
+Example:
+
+function foo(name){
+    return function(){
+        bar(name);
+    }
+}
+function bar(name){
+    console.log("Hello"+name);
+}
+
+When the function is called with something like, `foo("John")` the `console.log` will display `Hello John` on the display.
+
+How's this happenning? Go through that code snippet once again. The `foo()`
